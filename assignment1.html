@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Form</title>
+  <style>
+    @font-face {
+      font-family: 'Indigo';
+      src: url('Indigo.otf');
+    }
+    @font-face {
+      font-family: 'IndieFlower';
+      src: url('IndieFlower.ttf');
+    }
+
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #a9d5f5, #3aa2e6);
+      font-family: 'IndieFlower', cursive;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    /* Back button */
+    .back-btn {
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      /* width: 70px; */
+      height: 70px;
+    }
+
+    /* Bottom-right logo block */
+    .corner-logo {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 150px;
+      height: auto;
+    }
+
+    /* Center form container */
+    .form-wrapper {
+      width: 469px;
+      padding: 9px 33px;
+      background: #b9dff3;
+      border-radius: 60px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      position: relative;
+    }
+
+
+    .form-wrapper::before {
+      content: "CONTACT FORM";
+      position: absolute;
+      top: -80px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: 'Indigo', sans-serif;
+      font-size: 95px;
+      color: rgb(255 255 255);
+      font-weight: 900;
+      z-index: -1;
+      white-space: nowrap;
+    }
+
+    label {
+      color: white;
+      font-size: 20px;
+      margin-left: 10px;
+    }
+
+    .input-box {
+      width: 100%;
+      padding: 4px;
+      margin: -6px 0 22px 0;
+      background: white;
+      border-radius: 50px;
+      border: none;
+      font-size: 21px;
+      font-family: 'IndieFlower', cursive;
+      outline: none;
+    }
+
+    textarea.input-box {
+      border-radius: 40px;
+      height: 127px;
+      resize: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top-left icon -->
+  <a href="index.html"><img src="images/back1.webp" alt="Back" class="back-btn" /></a>
+
+  <!-- Main Form Container -->
+  <div class="form-wrapper">
+    <label>Name</label>
+    <input type="text" class="input-box" />
+
+    <label>Email</label>
+    <input type="email" class="input-box" />
+
+    <label>Message</label>
+    <textarea class="input-box"></textarea>
+  </div>
+
+  <!-- Bottom-right combined logo / text image -->
+  <a href="https://den-enterprise.github.io/Denver"><img src="images/FIND MORE About.png" alt="Denver Dude Logo" class="corner-logo" /></a>
+
+</body>
+</html>
